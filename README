@@ -1,4 +1,13 @@
-To compile and create binary, do make
-To run the binary, do 
-1) export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH 
-2) ./a.out
+1) To compile and create binary, do 
+    i) /bin/make
+Now there will two files created. libfunction.so and a.out
+
+2) To check what libraries a.out dynamically loads, do 
+    i) ldd a.out
+Now libfunction.so may show as "not found". 
+This is because libfunction.so library is not present in a directory which will be checked by the dynamic linker. 
+This can be fixed by either copying libfunction.so to a standard library directory, or by modifying that standard library path as below.
+    i) export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
+
+3) To run the binary, do 
+    i) ./a.out
