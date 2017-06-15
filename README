@@ -1,0 +1,4 @@
+To compile and create binary, do make
+To run the binary, do 
+1) export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH 
+2) ./a.out
