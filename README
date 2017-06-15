@@ -1,3 +1,5 @@
+Creating and using shared library in C++ - Sample program
+
 1) To compile and create binary, do 
     i) /bin/make
 Now there will two files created. libfunction.so and a.out
